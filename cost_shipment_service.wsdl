@@ -31,27 +31,26 @@
 			</xs:simpleType>
 			<xs:element name="value" type="xs:string" />
 			<xs:element name="inputData" type="tns:keyValues"/>
-			<xs:element name="err" type="xs:string" />
-			<xs:element name="serviceDays" type="xs:int" nillable='true' />
-			<xs:element name="utcPickupDateTime" type="xs:long" />
+			<xs:element name="serviceDays" type="xs:string"/>
+			<xs:element name="utcPickupDateTime" type="xs:string" />
 			<xs:element name="pickupTimezone" type="xs:string" />
-			<xs:element name="utcDeliveryDateTime" type="xs:long" />
+			<xs:element name="utcDeliveryDateTime" type="xs:string" />
 			<xs:element name="deliveryTimezone" type="xs:string" />
-			<xs:element name="chargeableWeight" type="xs:double" nillable='true' />
+			<xs:element name="chargeableWeight" type="xs:string"/>
 			<xs:element name="chargeableWeightUom" type="xs:string" />
-			<xs:element name="dimWeight" type="xs:double" nillable='true'/>
+			<xs:element name="dimWeight" type="xs:string" />
 			<xs:element name="dimWeightUom" type="xs:string" />
-			<xs:element name="cost" type="xs:double" nillable='true'/>
+			<xs:element name="cost" type="xs:string" />
 			<xs:element name="currencyCode" type="xs:string" />
 			<xs:element name="costType" type="tns:costType" />
 			<xs:element name="accessorialCode" type="xs:string" />
 			<xs:element name="costCode" type="xs:string" />
 			<xs:element name="specialServiceCode" type="xs:string" />
 			<xs:element name="calculationDetail" type="xs:string"/>
-			<xs:element name="isWeightedCostOnly" type="xs:boolean"/>
+			<xs:element name="isWeightedCostOnly" type="xs:string"/>
 			<xs:element name="costCategoryGid" type="xs:string" />
 			<xs:element name="shipUnitGid" type="xs:string" />
-			<xs:element name="shipUnitLineSeq" type="xs:long" />
+			<xs:element name="shipUnitLineSeq" type="xs:string" />
 			<xs:element name="values">
 				<xs:complexType>
 					<xs:sequence>
@@ -215,8 +214,7 @@
 							KG, etc.)
 						</xs:documentation>
 					</xs:annotation>
-					<xs:sequence>
-						<xs:element ref="tns:err" />
+					<xs:sequence>						
 						<xs:element ref="tns:costDetails"/>
 						<xs:element ref="tns:serviceDays" />
 						<xs:element ref="tns:utcPickupDateTime" />

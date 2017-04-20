@@ -6,7 +6,7 @@ function costShipment($rexRateRequest) {
 	$costDetails = new stdClass();
 	$response = new stdClass();
 	
-	$costDetail->cost = 500.00;
+	$costDetail->cost = '500.00';
 	$costDetail->currencyCode = 'EUR';
 	$costDetail->costType = 'Base';
 	$costDetail->accessorialCode = "";
@@ -20,9 +20,8 @@ function costShipment($rexRateRequest) {
 	
 	$costDetails->costDetail = $costDetail;
 	
-	$response->err = "";
 	$response->costDetails = $costDetails;
-	$response->serviceDays = 2;
+	$response->serviceDays = "";
 	$response->utcPickupDateTime = "";
 	$response->pickupTimezone = "";
 	$response->utcDeliveryDateTime = "";
