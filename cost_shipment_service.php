@@ -1,2 +1,3 @@
 <?php
-  echo 'future endpoint';
+  $server = new SoapServer("cost_shipment_service.wsdl");
+?>
