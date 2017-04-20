@@ -6,8 +6,17 @@ function costShipment($rexRateRequest) {
 	$costDetails = new stdClass();
 	$response = new stdClass();
 	
-	$costDetail->cost = 666.00;
+	$costDetail->cost = 500.00;
 	$costDetail->currencyCode = 'EUR';
+	$costDetail->costType = 'Base';
+	$costDetail->accessorialCode = "";
+	$costDetail->costCode = "";
+	$costDetail->specialServiceCode = "";
+	$costDetail->calculationDetails = "";
+	$costDetail->isWeightedCostOnly = "";
+	$costDetail->costCategoryGid = "";
+	$costDetail->shipUnitGid = "";
+	$costDetail->shipUnitLineSeq = "";
 	
 	$costDetails->costDetail = $costDetail;
 	
