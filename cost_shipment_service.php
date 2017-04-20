@@ -35,7 +35,8 @@ function costShipment($rexRateRequest) {
 }
  
    ini_set("soap.wsdl_cache_enabled", "0"); 
-   $server = new SoapServer("cost_shipment_service.wsdl");
+   $server = new SoapServer("cost_shipment_service.wsdl",
+      array('soap_version' => SOAP_1_2));
    $server->addFunction("costShipment"); 
    $server->handle(); 
 ?>
