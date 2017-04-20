@@ -1,6 +1,6 @@
 <?php
 
-function costShipment($inputDataList) { 
+function costShipment($rexRateRequest) { 
    return '<?xml version="1.0" encoding="UTF-8"?>
 				<SOAP-ENV:Envelope xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/" xmlns:ns1="http://xmlns.oracle.com/apps/otm/ExternalRating">
 					<SOAP-ENV:Body>
