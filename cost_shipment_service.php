@@ -1,20 +1,20 @@
 <?php
 
-function costShipment($xml) { 
+function costShipment($inputDataList) { 
    return '<?xml version="1.0" encoding="UTF-8"?>
-				<env:Envelope xmlns:env="http://schemas.xmlsoap.org/soap/envelope/">
-				  <env:Header/>
-					<env:Body>
-					  <rexRateResult>
-						<costDetails>
-							<costDetail>
-								<cost>666.00</cost>
-								<currencyCode>EUR</currencyCode>
-							</costDetail>
-						</costDetails>
-					  </rexRateResult>
-					</env:Body>
-				</env:Envelope>';
+				<SOAP-ENV:Envelope xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/" xmlns:ns1="http://xmlns.oracle.com/apps/otm/ExternalRating">
+					<SOAP-ENV:Body>
+						<env:Body>
+						  <ns1:rexRateResult>
+							<ns1:costDetails>
+								<ns1:costDetail>
+									<ns1:cost>666.00</ns1:cost>
+									<ns1:currencyCode>EUR</ns1:currencyCode>
+								</ns1:costDetail>
+							</ns1:costDetails>
+						  </ns1:rexRateResult>
+					</SOAP-ENV:Body>
+				</SOAP-ENV:Envelope>';
 }
  
    ini_set("soap.wsdl_cache_enabled", "0"); 
