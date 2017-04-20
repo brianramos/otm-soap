@@ -1,10 +1,8 @@
 {
-  "project_name": "Hello World - PHP",
-  "project_description": "Starter code for a Google App Engine app in PHP.",
+  "project_name": "OTM Soap Web Services",
+  "project_description": "Web Service Testing Application for OTM",
   "show_files": [
-    "helloworld.php",
+    "cost_shipment_service.php",
     "app.yaml"
-  ],
-  "read_only_demo_url": "https://try-php-demo-dot-cloud-playground.appspot.com/",
-  "download_filename": "appengine-try-php.zip"
+  ]
 }
