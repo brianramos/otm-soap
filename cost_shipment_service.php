@@ -11,17 +11,17 @@ function costShipment($rexRateRequest) {
 	
 	$costDetails->costDetail = $costDetail;
 	
-	$response->err;
+	$response->err = "";
 	$response->costDetails = $costDetails;
-	$response->serviceDays;
-	$response->utcPickupDateTime;
-	$response->pickupTimezone;
-	$response->utcDeliveryDateTime;
-	$response->deliveryTimezone;
-	$response->chargeableWeight;
-	$response->chargeableWeightUom;
-	$response->dimWeight;
-	$response->dimWeightUom;
+	$response->serviceDays = 2;
+	$response->utcPickupDateTime = "";
+	$response->pickupTimezone = "";
+	$response->utcDeliveryDateTime = "";
+	$response->deliveryTimezone = "";
+	$response->chargeableWeight = "";
+	$response->chargeableWeightUom = "";
+	$response->dimWeight = "";
+	$response->dimWeightUom = "";
 
 	return $response;
 }
