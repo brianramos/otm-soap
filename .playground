@@ -1,8 +1,9 @@
 {
-  "project_name": "OTM Soap Web Services",
+  "project_name": "otm-soap",
   "project_description": "Web Service Testing Application for OTM",
   "show_files": [
     "cost_shipment_service.php",
+	"welcome.php",
     "app.yaml"
   ]
 }

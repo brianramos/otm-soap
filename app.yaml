@@ -1,8 +1,10 @@
-application: helloworld
+application: otm-soap
 version: 1
 runtime: php55
 api_version: 1
 
 handlers:
-- url: /cost_shipment.*
+  url: /.*
+  script: welcome.php
+- url: /cost_shipment
   script: cost_shipment_service.php
