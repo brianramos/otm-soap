@@ -236,7 +236,7 @@
 		<part name="rexRateRequest" element="tns:rexRateRequest"/>
 	</message>
 	<message name="costShipmentResponse">
-		<part name="rexRateResult" type="xsd:string"/>
+		<part name="rexRateResult" element="tns:rexRateResult"/>
 	</message>
 	<portType name="ExternalRating">
 		<operation name="costShipment">
