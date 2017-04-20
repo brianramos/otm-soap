@@ -2,10 +2,26 @@
 
 function costShipment($rexRateRequest) { 
 
+	$costDetail = new stdClass();
+	$costDetails = new stdClass();
 	$response = new stdClass();
-
-	$response->cost = 666.00;
-	$response->currencyCode = 'EUR';
+	
+	$costDetail->cost = 666.00;
+	$costDetail->currencyCode = 'EUR';
+	
+	$costDetails->costDetail = $costDetail;
+	
+	$response->err;
+	$response->costDetails = $costDetails;
+	$response->serviceDays;
+	$response->utcPickupDateTime;
+	$response->pickupTimezone;
+	$response->utcDeliveryDateTime;
+	$response->deliveryTimezone;
+	$response->chargeableWeight;
+	$response->chargeableWeightUom;
+	$response->dimWeight;
+	$response->dimWeightUom;
 
 	return $response;
 }
