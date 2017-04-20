@@ -1,12 +1,13 @@
 <?php
 
 function costShipment($rexRateRequest) { 
-   return '<ns1:costDetails>
-				<ns1:costDetail>
-					<ns1:cost>666.00</ns1:cost>
-					<ns1:currencyCode>EUR</ns1:currencyCode>
-				</ns1:costDetail>
-			</ns1:costDetails>';
+
+	$response = new stdClass();
+
+	$response->cost = 666.00;
+	$response->currencyCode = 'EUR';
+
+	return $response;
 }
  
    ini_set("soap.wsdl_cache_enabled", "0"); 
