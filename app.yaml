@@ -4,7 +4,9 @@ api_version: 1
 handlers:
 - url: /
   script: welcome.php
-- url: /cost_shipment
+- url: /
+  script: cost_shipment_wsdl.php
+- url: /cost_shipment?wsdl
   script: cost_shipment_service.php
 - url: /.*
   script: not_found.php
